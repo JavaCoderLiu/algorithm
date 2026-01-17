@@ -46,14 +46,14 @@ public class Class004SelectBubbleInsertSort {
         return arr;
     }
 
-    /*0~i范围上已有序,新来的数从右到左依次滑,直到左边没数或者不小于左边的数,然后继续*/
+    /*插入排序:0~i范围上已有序,新来的数从右到左依次滑,直到左边没数或者不小于左边的数,然后继续*/
     public static int[] insertSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return arr;
         }
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j - 1 >= 0 && arr[j - 1] > arr[j]; j--) {
-                swap(arr, j-1, j);
+                swap(arr, j - 1, j);
             }
         }
         return arr;
