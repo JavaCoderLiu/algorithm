@@ -31,7 +31,7 @@ public class HeapSort {
      * @param nums
      */
     public static void HeapInsert(int[] nums) {
-        int size = 0;
+        // int size = 0;
         // 依次插入节点
         for (int i = 0; i <= nums.length - 1; i++) {
             int temp = i;
@@ -75,7 +75,7 @@ public class HeapSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{5,2,6};
+        int[] nums = new int[]{5,2,6,3};
         HeapSort1(nums);
         for (int i : nums) {
             System.out.print(i + " ");
