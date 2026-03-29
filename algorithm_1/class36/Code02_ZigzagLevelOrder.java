@@ -1,10 +1,9 @@
 package class36;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class zigzagLevelOrder {
+public class Code02_ZigzagLevelOrder {
 
     public class TreeNode {
         int val;
